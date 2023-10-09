@@ -69,7 +69,7 @@ public class AppTest {
             Class<?>[] params = {Integer.class};
             
             barangClass.getMethod("getHargaBeli");
-            barangClass.getMethod("sethargaBeli", params);
+            barangClass.getMethod("setHargaBeli", params);
             
             Barang barang = new Barang();
             barang.setHargaBeli(10000);
@@ -92,7 +92,7 @@ public class AppTest {
     public void testGetSetDiskon(){
         try{
             Class<?> barangClass = Class.forName("id.ac.unand.fti.si.pbo.Barang");
-            Class<?>[] params = {Integer.class};
+            Class<?>[] params = {Double.class};
             
             barangClass.getMethod("getDiskon");
             barangClass.getMethod("setDiskon", params);
